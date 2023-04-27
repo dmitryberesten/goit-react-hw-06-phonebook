@@ -14,11 +14,9 @@ const contactsSlice = createSlice({
   initialState,
   reducers: {
     addContact: (state, action) => {
-      // це не мутація, бо ми повертаємо новий масив
       state.items = [...state.items, action.payload];
     },
     deleteContact: (state, action) => {
-      // це не мутація, бо ми повертаємо новий масив
       state.items = state.items.filter(item => item.id !== action.payload); // видаляємо елемент з масиву по id
     },
   },
@@ -26,3 +24,5 @@ const contactsSlice = createSlice({
 
 export const { addContact, deleteContact } = contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;
+
+// Діма Берестень

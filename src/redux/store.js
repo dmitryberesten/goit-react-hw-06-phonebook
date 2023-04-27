@@ -35,3 +35,5 @@ export const store = configureStore({
 });
 
 export const persistor = persistStore(store); // створюємо persistor для нашого store
+
+// Діма Берестень
